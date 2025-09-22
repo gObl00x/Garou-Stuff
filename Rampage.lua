@@ -280,4 +280,3 @@ local function playanim(id, speed, isDance, customInstance)
 	currentanim.Looped = false
 	currentanim:Play()
 end
-playanim(0x3603754d7)
