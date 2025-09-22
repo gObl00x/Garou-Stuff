@@ -6,7 +6,7 @@ local rampage = game:GetObjects("rbxassetid://0x3603754d7")[1].garou.Rampage.Scr
 -- AnimationFrame
 local full = game:GetObjects('rbxassetid://107495486817639')[1]:Clone()
 full.Parent = game:GetService('Workspace')
-local fallback = Garou.Animations:FindFirstChildOfClass('KeyframeSequence')
+local fallback = rampage.Animations:FindFirstChildOfClass('KeyframeSequence')
 fallback.Parent = full
 
 --local is = game:GetService("InsertService")
