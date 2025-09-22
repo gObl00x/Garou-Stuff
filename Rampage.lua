@@ -38,7 +38,7 @@ local timeposcur = 0
 if character:FindFirstChild('Animate') then
 	character.Animate.Enabled = true
 end
-for i, v in pairs(Humanoid:GetPlayingAnimationTracks()) do
+for i, v in pairs(humanoid:GetPlayingAnimationTracks()) do
 	v:Stop()
 end
 local h = character.Head
