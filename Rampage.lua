@@ -43,7 +43,7 @@ for i, v in pairs(humanoid:GetPlayingAnimationTracks()) do
 end
 local h = character.Head
 local t = character.Torso
-local RootPart = character.RootPart
+local RootPart = character.HumanoidRootPart
 local RunService = game:GetService('RunService')
 
 
