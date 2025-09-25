@@ -144,7 +144,7 @@ local function makeanimlibrary() --// yeah sorry im not going to edit and mix at
 		return motors
 	end
 
-	local cframe_zero = CF()
+	local cframe_zero = CFrame()
 	local UpdateEvent = RunService.PreSimulation
 
 	local AnimLibrary = {}
