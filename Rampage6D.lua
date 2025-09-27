@@ -1,12 +1,11 @@
+local Rampage = game:GetObjects("rbxassetid://0x3603754d7")[1].garou.Rampage.Script
 local player = game.Players.LocalPlayer
 local character = player.Character
 local humanoid = character.Humanoid
-local rampage = game:GetObjects("rbxassetid://0x3603754d7")[1].garou.Rampage.Script
-
--- AnimationFrame
+--
 local full = game:GetObjects('rbxassetid://107495486817639')[1]:Clone()
 full.Parent = game:GetService('Workspace')
-local fallback = rampage.Animations:FindFirstChildOfClass('KeyframeSequence')
+local fallback = Rampage.Animations:FindFirstChildOfClass('KeyframeSequence')
 fallback.Parent = full
 
 --local is = game:GetService("InsertService")
@@ -43,7 +42,7 @@ for i, v in pairs(humanoid:GetPlayingAnimationTracks()) do
 end
 local h = character.Head
 local t = character.Torso
-local RootPart = character.HumanoidRootPart
+local HumanoidRootPart = character.HumanoidRootPart
 local RunService = game:GetService('RunService')
 
 
@@ -144,7 +143,7 @@ local function makeanimlibrary() --// yeah sorry im not going to edit and mix at
 		return motors
 	end
 
-	local cframe_zero = CFrame()
+	local cframe_zero = CFrame.new()
 	local UpdateEvent = RunService.PreSimulation
 
 	local AnimLibrary = {}
